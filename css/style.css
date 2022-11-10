@@ -1,0 +1,606 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main_productos {
+    height: 500vh;
+    width: 100%;
+    margin: 0;
+}
+
+html {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+h1 {
+    color: rgb(54, 15, 128)
+}
+
+section article {
+    background-color: rgb(86, 200, 206);
+    width: 200px;
+    height: 100px;
+}
+
+section article h1 {
+    padding: 10px 10px 10px 10px;
+}
+
+.langingbg {
+    background: url(https://img.freepik.com/free-photo/barber-tools-wallpaper-pattern-wooden-background-job-career-concept_53876-143260.jpg?w=2000);
+}
+
+.logo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    height: 600px;
+    width: 100%;
+}
+
+.cardland {
+    border-style: outset;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.678);
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: bisque;
+    height: 120px;
+    width: 800px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.lorelanding {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.container {
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    margin: auto;
+    gap: 9rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    margin: 0;
+}
+
+.card {
+    margin-top: 15rem;
+    margin-bottom: 20rem;
+    width: 20rem;
+    height: 30rem;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #513F3F;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0.5, 0, 0, 0.6);
+    transform: translateY(-2%);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+}
+
+.card .contenido {
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p {
+    line-height: 1.5;
+    color: #D6D6D6;
+}
+
+.card .contenido h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+
+}
+
+.card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #322F2F;
+    border: 1px solid #322F2F;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover {
+    background: #D6D6D6;
+    color: #944b4b;
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    background: #513F3F;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.containerh {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logoheader {
+    width: 75px;
+    height: 75px;
+    float: left;
+    line-height: 75px;
+}
+
+.menu {
+    float: right;
+    line-height: 75px;
+
+}
+
+.menu a {
+    color: #D6D6D6;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: normal;
+    font-size: 14px;
+    transition: all 500ms ease;
+}
+
+.menu a:hover {
+    color: rgb(39, 15, 20);
+    border-bottom: 6px solid transparent;
+}
+
+
+.langingbg1 {
+    background: url(https://img.freepik.com/free-photo/barber-tools-wallpaper-pattern-wooden-background-job-career-concept_53876-143260.jpg?w=2000);
+    color: rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-color: #322F2F;
+    padding-bottom: 35rem;
+}
+
+.fotoG {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.eventos {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.carde {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 80rem;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background: #D6D6D6;
+    box-shadow: 0px 5px 10px #322F2F;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:420px) {
+    .img-card {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .carde {
+        font-size: 0.9rem;
+        flex-direction: column;
+        columns: 1;
+    }
+    .contenidoe {
+        font-size: 0.8rem;
+        margin-right: 1rem;
+    }
+}
+@media screen and (max-width:800px) {
+    .img-card {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    .carde {
+        font-size: 1.2rem;
+        flex-direction: column;
+        columns: 1;
+    }
+    .contenidoe {
+        font-size: 0.8rem;
+        margin-right: 1rem;
+    }
+}
+
+.carde .img-card {
+    background: url(https://www.hji.co.uk/wp-content/efs/2019/07/sarahmorrissey73_64869930_124877098760311_7960994368888656711_n.jpg);
+    width: 40rem;
+    height: 40rem;
+    background-size: cover;
+
+}
+
+.carde .contenidoe {
+    width: 60rem;
+    height: 100%;
+    display: grid;
+}
+
+.carde .contenidoe .titulo-card-evento h3 {
+    color: #322F2F;
+}
+
+.carde .contenidoe .titulo-card-evento span {
+    color: #31319b;
+    font-size: 12px;
+}
+
+.carde .contenidoe .conteinere button {
+    background: darkorange;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.carde .contenidoe .conteinere button :hover {
+    background: #202066;
+
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 200px;
+    border-radius: 20px;
+}
+
+h2 {
+    color: #D6D6D6;
+    text-align: center;
+    margin: 0%;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#BotonContactanos {
+    background: #322F2F;
+    color: #D6D6D6;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+#BotonContactanos:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 430px) {
+    form {
+        width: 80%;
+    }
+
+}
+
+#map {
+    margin-right: 500px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner {
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 200px;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 20px;
+    margin-right: 200px;
+}
+
+.navbar {
+    background-color: #513F3F;
+    padding: 0;
+}
+
+.container-fluid {
+    background-color: #513F3F;
+
+}
+
+.logobarbe {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar-brand {
+    margin-left: 5%;
+}
+
+@media screen and (max-width: 300px) {
+    .barberlogo {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.logobarbe:hover {
+    transform: scale(1.12);
+}
+
+main {
+    width: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+.galeria-conatiner {
+    margin-left: 150px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 350px;
+    grid-row-gap: 10px;
+    padding: 10px;
+    grid-gap: 10px;
+    width: 75%;
+    height: 75vh;
+}
+
+.gallery__item {
+    position: relative;
+}
+
+.gallery__img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: end;
+}
+
+.gallery__img:hover {
+    box-shadow: 5px 5px 20px rgba(0.5, 0, 0, 0.6);
+    transform: translateY(-1%);
+}
+
+.gallery__tittle {
+    position: absolute;
+    bottom: 0;
+    color: #D6D6D6;
+    background: #322f2f91;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width:420px) {
+    .galeria-conatiner {
+        margin-left: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (max-width:820px) {
+    .galeria-conatiner {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 90px;
+    }
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    max-height: 20vh;
+    width: 100%;
+}
+#boxlorem {
+    width: 500px;
+}
+.pie-pagina {
+    width: 100%;
+    height: 165px;
+    background-color: #252424;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-height: 18vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 0.3fr);
+    grid-gap: 10px;
+    padding: 15px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 500px;
+    height: auto;
+}
+.boxlogodf {
+    margin-left: 1rem;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #D6D6D6;
+    margin-bottom: 25px;
+    font-size: 20px;
+
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #D6D6D6;
+}
+
+.pie-pagina .grupo-1 .box small {
+    color: #D6D6D6;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #D6D6D6;
+    margin-right: 10px;
+    background-color: #513F3F;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 300ms ease;
+    margin-left: 15px;
+}
+
+.box {
+    width: 300px;
+    align-items: center;
+}
+
+.red-social {
+    align-items: center;
+}
+
+.grupo-2 {
+    margin-top: 30px;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: rgb(126, 46, 46);
+}
+
+.pie-pagina .grupo-2 {
+    color: #D6D6D6;
+    padding: 15px 10px;
+    text-align: center;
+    margin-right: 200px;
+}
+
+.logo-footer {
+    max-width: 6rem;
+}
+
+@media screen and (max-width: 800px) {
+    .logo-footer {
+        max-width: 8rem;
+    }
+    .boxlogodf {
+        display: none;
+    }
+    #boxlorem,
+    .grupo-2 {
+        display: none;
+    }
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .pie-pagina {
+        height: 500vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-footer {
+        display: none;
+    }
+    .social {
+        width: 100%;
+    }
+    .boxlogodf {
+        display: none;
+    }
+    .grupo-1 {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    #boxlorem,
+    .grupo-2 {
+        display: none;
+    }
+    .red-social {
+        max-width: 100%;
+}
+}
